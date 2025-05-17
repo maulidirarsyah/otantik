@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Nusantara - Menu Noodle</title>
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <div class="language-selector">
+            <i class="fas fa-globe"></i>
+            <select>
+                <option>Albanian</option>
+                <option>English</option>
+            </select>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <h1>OTANTIK</h1>
+        
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>
+                <a href="https://www.google.com/maps?q=otantik,+Zona+Kadastrale+Nr.+8518,+Nr.+Pasurisë,+Bashkia+Durrës,+Rruga+Plazh+13,+Durrës+2008&ftid=0x134fd9d53c9d629d:0x6d231b5af0bd270&entry=gps&lucs=,94242574,47071704,47069508,94218641,47084304,94208458,94208447&g_ep=CAISDTYuMTA1LjIuNDYzMzAYACCenQoqPyw5NDI0MjU3NCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICQUw%3D&g_st=ic" target="_blank">
+                    Durrës Plazh, pranë Hotel Adriatik, Durrës, Shqipëri 🇦🇱
+                </a>
+            </span>
+        </div>
+        
+        
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <a href="https://wa.me/355684091328" target="_blank">
+                +355 68 409 1328
+            </a>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-wifi"></i>
+            <span class="wifi-code">Wifi_RestaurantFree</span>
+        </div>
+        
+        <div class="info-text">
+            Open daily from 10:00 - 22:00 WIB. Table reservations can be made by phone or online application.
+        </div>
+        
+        <hr>
+        
+        <div class="menu-tabs">
+            <button class="menu-tab"data-link="index.html">Main menu</button>
+            <button class="menu-tab" data-link="detail-menu-supat.html">SUPAT</button>
+            <button class="menu-tab" data-link="detail-menu-MEZE TË FTOHTA.html">MEZE TË FTOHTA</button>
+            <button class="menu-tab" data-link="detail-menu-SALLATA.html">SALLATA</button>
+            <button class="menu-tab" data-link="detail-menu-PRODUKTE TË FTOHTA SHTESË.html">PRODUKTE TË FTOHTA SHTESË</button>
+            <button class="menu-tab" data-link="detail-menu-MEZE TË NGROHTA.html">MEZE TË NGROHTA</button>
+            <button class="menu-tab" data-link="detail-menu-NGA FURRA.html">NGA FURRA</button>
+            <button class="menu-tab" data-link="detail-menu-PICAT SPECIALE OTANTIK.html">PICAT SPECIALE OTANTIK</button>
+            <button class="menu-tab" data-link="detail-menu-SPECIALITETET NË TIGAN.html">SPECIALITETET NË TIGAN</button>
+            <button class="menu-tab" data-link="detail-menu-SPECIALITETET NË ZGARË.html">SPECIALITETET NË ZGARË</button>
+            <button class="menu-tab active" data-link="detail-menu-OTANTIK STEAK HOUSE.html">OTANTIK STEAK HOUSE</button>
+            <button class="menu-tab" data-link="detail-menu-BURGERA.html">BURGERA</button>
+            <button class="menu-tab" data-link="detail-menu-PIDET.html">PIDET</button>
+            <button class="menu-tab" data-link="detail-menu-PIZZAS.html">PIZZAS</button>
+            <button class="menu-tab" data-link="detail-menu-ËMBËLSIRA.html">ËMBËLSIRA</button>
+            <button class="menu-tab" data-link="detail-menu-bar-PIJET.html">PIJET</button>
+            <button class="menu-tab" data-link="detail-menu-bar-PIJET ALKOOLIKE.html">PIJET ALKOOLIKE</button>
+        </div>
+        
+        <!-- Main Menu Content -->
+        <div id="main-menu" class="tab-content active">
+            <h2 class="menu-section-title">OTANTIK STEAK HOUSE (10:00 - 22:00)</h2>
+
+            <div class="menu-items">
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/1.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">TOMAHAWK</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <p class="menu-item-desc">300-500 gr</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">4000<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/2.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">T-BONE</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <p class="menu-item-desc">300 gr</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">3500<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/3.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">CHATEAUBRIAND</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">4500<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/4.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">BRINJË QENGJ</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">3500<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/5.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">FILETO VIÇI</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">4000<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/6.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">TOMAHAWK</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <p class="menu-item-desc">600-800 gr</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">6000<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="menu-item">
+                    <img src="images/OTANTIK STEAK HOUSE/7.avif" class="menu-item-img" alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-name">TOMAHAWK</h3>
+                            <span class="menu-item-weight"></span>
+                        </div>
+                        <p class="menu-item-desc">1.2 kg</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">8500<span class="currency">LEKË</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+    <footer>
+        <div class="footer-logo">OTANTIK</div>
+        <div class="social-icons">
+            <a href="https://instagram.com/otantik.al" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/355684091328" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Krijuar nga <a href="https://goviral.al/" target="_blank">Go Viral</a>
+        </div>        
+    </footer>
+    
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="imgCaption"></div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
