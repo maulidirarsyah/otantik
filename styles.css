@@ -345,8 +345,6 @@ hr {
     font-weight: 700;
     margin: 1.7rem 0 1rem;
 }
-
-/* Menu items styling - lebih ringkas dan hemat tempat */
 .menu-items {
     display: flex;
     flex-direction: column;
@@ -365,7 +363,7 @@ hr {
     transform: translateY(-3px); /* efek hover lebih halus */
 }
 
-/* Gambar menu lebih kecil untuk hemat tempat */
+/* Gambar menu lebih kecil untuk hemat tempat dengan radius */
 .menu-item-img {
     width: 100%;
     height: 160px; /* mengurangi tinggi gambar */
@@ -374,6 +372,7 @@ hr {
     background: linear-gradient(145deg, #f5f7fa, #c3cfe2);
     transition: all 0.3s ease;
     border-bottom: 2px solid var(--primary-color); /* border lebih tipis */
+    border-radius: 8px 8px 0 0; /* radius di bagian atas gambar */
 }
 
 /* Menyederhanakan efek dekoratif */
@@ -565,6 +564,7 @@ hr {
 .menu-item-img {
     cursor: pointer;
     transition: opacity 0.2s, transform 0.2s;
+    border-radius: 8px 8px 0 0; /* konsisten dengan deklarasi sebelumnya */
 }
 
 .menu-item-img:hover {
