@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otantik - Digital Menu</title>
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+    </header>
+    
+    <div class="main-content">
+        <div class="title-container">
+            <div class="brand-name">OTANTİK</div>
+            <div class="subtitle">Turkish Restaurant & Bistro</div>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>
+                <a href="https://www.google.com/maps?q=otantik,+Zona+Kadastrale+Nr.+8518,+Nr.+Pasurisë,+Bashkia+Durrës,+Rruga+Plazh+13,+Durrës+2008&ftid=0x134fd9d53c9d629d:0x6d231b5af0bd270&entry=gps&lucs=,94242574,47071704,47069508,94218641,47084304,94208458,94208447&g_ep=CAISDTYuMTA1LjIuNDYzMzAYACCenQoqPyw5NDI0MjU3NCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICQUw%3D&g_st=ic" target="_blank">
+                    Durrës Plazh, pranë Hotel Adriatik, Durrës, Shqipëri 🇦🇱
+                </a>
+            </span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <a href="https://wa.me/355684091328" target="_blank">
+                +355 68 409 1328
+            </a>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-wifi"></i>
+            <span class="wifi-code">Wifi_RestaurantFree</span>
+        </div>
+        
+        <div class="info-text">
+            Open daily from 10:00 - 22:00. Table reservations can be made by phone or online application.
+        </div>
+        
+        <hr>
+        
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-link="index.html">Main menu</button>
+            <button class="menu-tab" data-tab="bar">Bar</button>
+        </div>
+               
+        <!-- Main Menu Content -->
+        <div id="main-menu" class="tab-content active">
+            <h2 class="menu-section-title">NGA FURRA</h2>
+            
+            <div class="menu-categories">
+                <!-- NGA FURRA --> 
+                <div class="menu-category">
+                    <a href="detail-menu-NGA FURRA.html">
+                        <img src="images/NGA FURRA.png" alt="NGA FURRA">
+                        <div class="menu-category-title">LAHMAXHUN</div>
+                    </a>                
+                </div>
+                
+                <!-- PICAT SPECIALE OTANTIK --> 
+                <div class="menu-category">
+                    <a href="detail-menu-PICAT SPECIALE OTANTIK.html">
+                        <img src="images/PICAT SPECIALE OTANTIK.png" alt="PICAT SPECIALE OTANTIK">
+                        <div class="menu-category-title">PICAT SPECIALE OTANTIK</div>
+                    </a>
+                </div>
+                
+                <!-- PIDET --> 
+                <div class="menu-category">
+                    <a href="detail-menu-PIDET.html">
+                        <img src="images/PIDET.png" alt="PIDET">
+                        <div class="menu-category-title">PIDET</div>
+                    </a>
+                </div>
+                
+                <!-- PIZZAS --> 
+                <div class="menu-category">
+                    <a href="detail-menu-PIZZAS.html">
+                        <img src="images/PIZZAS.png" alt="PIZZAS">
+                        <div class="menu-category-title">PIZZAS</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bar Content -->
+        <div id="bar" class="tab-content">
+            <div class="menu-categories">
+                <!-- PIJET --> 
+                <div class="menu-category">
+                    <a href="detail-menu-bar-PIJET.html">
+                        <img src="images/PIJET.png" alt="PIJET">
+                        <div class="menu-category-title">PIJET</div>
+                    </a>
+                </div>
+                
+                <!-- PIJET ALKOOLIKE --> 
+                <div class="menu-category">
+                    <a href="detail-menu-bar-PIJET ALKOOLIKE.html">
+                        <img src="images/PIJET ALKOOLIKE.png" alt="PIJET ALKOOLIKE">
+                        <div class="menu-category-title">PIJET ALKOOLIKE</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">OTANTIK</div>
+        <div class="social-icons">
+            <a href="https://instagram.com/otantik.al" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/355684091328" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Krijuar nga <a href="https://goviral.al/" target="_blank">Go Viral</a>
+        </div>        
+    </footer>
+
+    <!-- JavaScript for menu tabs  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuTabs = document.querySelectorAll('.menu-tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+    
+            menuTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Check if tab has data-link attribute (for redirect)
+                    const dataLink = tab.getAttribute('data-link');
+                    if (dataLink) {
+                        // Redirect to the specified page
+                        window.location.href = dataLink;
+                        return;
+                    }
+                    
+                    // Normal tab switching behavior
+                    // Remove active class from all tabs
+                    menuTabs.forEach(t => t.classList.remove('active'));
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all tab contents
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Show the corresponding tab content
+                    const tabId = tab.getAttribute('data-tab');
+                    const targetContent = document.getElementById(tabId);
+                    if (targetContent) {
+                        targetContent.classList.add('active');
+                    }
+                    
+                    // Hide search results when switching tabs
+                    const searchResults = document.getElementById('searchResults');
+                    if (searchResults) {
+                        searchResults.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

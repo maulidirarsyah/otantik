@@ -376,7 +376,9 @@ hr {
     background: linear-gradient(145deg, #f5f7fa, #c3cfe2);
     transition: all 0.4s ease;
     border-bottom: 3px solid var(--primary-color);
+    border-radius: 12px;
 }
+
 
 /* Adding a decorative pattern to the background */
 .menu-item-img::before {
